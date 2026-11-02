@@ -2,7 +2,7 @@
 
 A small macOS menu bar app for the Pomodoro technique: 25 minutes of focus, then a short break, with a long break after every 4th focus session. It lives in the menu bar and has no Dock icon.
 
-It is not built yet. The timer logic in `PomodoroCore` is stubbed out and its tests fail, the panel is a placeholder, and the one UI test fails. What the app should do is in [docs/spec.md](docs/spec.md).
+Click the timer in the menu bar to open the panel: Start / Pause, Reset, Skip, and a count of completed focus sessions. The menu bar shows the time left while a phase is in progress. What the app does is in [docs/spec.md](docs/spec.md).
 
 ```
 Pomodoro/            SwiftUI app target (MenuBarExtra), macOS 13+
@@ -25,13 +25,6 @@ xcodebuild -project Pomodoro.xcodeproj -scheme Pomodoro -destination 'platform=m
 On a new Mac the first UI test run can fail with "Timed out while enabling automation mode". Run `sudo automationmodetool enable-automationmode-without-authentication`, run the tests again, and type the Mac's password if a "XCTest is trying to Enable UI Automation" dialog appears.
 
 The Xcode project uses synchronized folders, so new `.swift` files in `Pomodoro/` or `PomodoroUITests/` are picked up without editing the project. The app is signed to run locally, so no Apple developer account is needed.
-
-Right now `swift test` fails:
-
-```
-Test Suite 'All tests' failed
-	 Executed 19 tests, with 33 failures (0 unexpected)
-```
 
 ---
 
