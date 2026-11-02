@@ -1,7 +1,0 @@
-.DS_Store
-.build/
-DerivedData/
-build/
-*.xcresult
-xcuserdata/
-.swiftpm/

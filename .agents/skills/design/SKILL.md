@@ -13,7 +13,7 @@ Small, quiet and precise, like a built-in macOS menu bar extra.
 - Start / Pause as a large capsule button in the phase color (`.borderedProminent`, `.controlSize(.large)`), full width.
 - Reset and Skip side by side under it as quieter bordered buttons with SF Symbols (`arrow.counterclockwise`, `forward.end`).
 - "Completed: N" in secondary text. Quit at the bottom under a divider, small and plain.
-- Keep every accessibility identifier from docs/spec.md exactly as written.
+- Keep every accessibility identifier from the build-and-test skill exactly as written.
 - Works in light and dark mode.
 
 States to screenshot: the panel at Focus 25:00, while running, on a short break, in dark mode.
