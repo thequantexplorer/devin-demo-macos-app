@@ -16,6 +16,8 @@ Start a new Devin session at [app.devin.ai](https://app.devin.ai) and paste this
 ```text
 Build the Pomodoro macOS menu bar app in https://github.com/<you>/devin-demo-macos-app. The spec is docs/spec.md. This needs Xcode, so start a macOS child session and do the work there.
 
+Follow the design skill in .agents/skills/design/SKILL.md. The result should look like a finished, polished product, not a default template.
+
 1. Implement the timer logic in PomodoroCore until `swift test --package-path PomodoroCore` passes. Do not change the existing tests.
 2. Build the menu bar panel and the -ui-testing mode exactly as the spec says, with the listed accessibility identifiers.
 3. Write XCUITest UI tests in PomodoroUITests that check Start, Pause, Reset and Skip, and that a short focus phase runs out and moves to a short break. Run everything with `xcodebuild -project Pomodoro.xcodeproj -scheme Pomodoro -destination 'platform=macOS' test` until it passes.
