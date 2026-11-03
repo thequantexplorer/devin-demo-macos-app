@@ -1,7 +1,7 @@
 import XCTest
 
-/// UI tests for the menu bar panel. See docs/spec.md for the
-/// accessibility identifiers and the -ui-testing launch argument.
+/// UI tests for the menu bar panel. See .agents/skills/build-and-test/SKILL.md
+/// for the accessibility identifiers and the -ui-testing launch argument.
 final class PomodoroUITests: XCTestCase {
     override func setUp() {
         continueAfterFailure = false

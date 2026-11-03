@@ -45,7 +45,8 @@ public struct PomodoroSettings: Equatable {
 
 /// The timer logic for the menu bar app. It never reads the clock itself:
 /// callers pass `now` in, so tests are fast and deterministic.
-/// The rules are in docs/spec.md.
+/// Focus is followed by a short break, or a long break after every
+/// `focusSessionsBeforeLongBreak`-th focus; a break is followed by focus.
 public struct PomodoroTimer {
     public let settings: PomodoroSettings
     public private(set) var phase: Phase = .focus
